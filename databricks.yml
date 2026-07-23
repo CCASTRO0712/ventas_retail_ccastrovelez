@@ -1,0 +1,45 @@
+bundle:
+  name: ventas_retail_ccastrovelez
+
+# -----------------------------------------------------------------------------
+# Variables del proyecto.
+# -----------------------------------------------------------------------------
+variables:
+  catalog:
+    description: Catálogo único de Unity Catalog para todo el proyecto
+    default: proyecto_final
+  project_name:
+    description: Nombre único del proyecto (subcarpeta dentro del Volume de landing)
+    default: ventas_retail_ccastrovelez
+  landing_schema:
+    description: Esquema donde vive el Volume con los datos crudos
+    default: landing
+  bronze_schema:
+    description: Esquema de la capa Bronze
+    default: bronze
+  silver_schema:
+    description: Esquema de la capa Silver
+    default: silver
+  gold_schema:
+    description: Esquema de la capa Gold (modelo dimensional)
+    default: gold
+  volume_name:
+    description: Nombre del Volume de landing
+    default: raw_data
+
+include:
+  - resources/*.yml
+
+targets:
+  dev:
+    mode: development
+    default: true
+    workspace:
+      host: https://dbc-7f8ddbf3-87aa.cloud.databricks.com
+
+  prod:
+    mode: production
+    workspace:
+      host: https://dbc-7f8ddbf3-87aa.cloud.databricks.com
+    variables:
+      project_name: ventas_retail_ccastrovelez

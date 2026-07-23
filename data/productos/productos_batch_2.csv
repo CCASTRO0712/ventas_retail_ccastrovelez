@@ -1,0 +1,21 @@
+product_id,nombre_producto,categoria,subcategoria,precio_unitario,proveedor,stock_actual
+2021,Alfombra Oficina,Tecnologia,Oficina,454.78,SoundWave Inc,196
+2022,Ventilador de Escritorio,Tecnologia,Almacenamiento,743.17,OfficeMax,351
+2023,Base para Laptop,Tecnologia,Almacenamiento,2732.61,GadgetWorld,218
+2024,Mochila para Laptop,Tecnologia,Accesorios,3027.47,GadgetWorld,100
+2025,Micrófono USB,Hogar,Mobiliario,635.97,SoundWave Inc,220
+2026,Silla Plegable,Tecnologia,Almacenamiento,565.6,HomeStyle,65
+2027,Mesa de Centro,Hogar,Mobiliario,3006.49,OfficeMax,112
+2028,Regulador de Voltaje,Hogar,Accesorios,1075.12,GadgetWorld,126
+2029,Extension Electrica,Tecnologia,Computadoras,2313.52,BrightHome,178
+2030,Soporte para Monitor,Hogar,Mobiliario,3384.44,SoundWave Inc,189
+2031,Hub USB,Hogar,Accesorios,3287.94,TechSupply SA,143
+2032,Pantalla Divisoria,Tecnologia,Almacenamiento,143.52,PrintCorp,232
+2033,Archivador Metalico,Hogar,Accesorios,1533.01,PrintCorp,69
+2034,Cafetera Electrica,Hogar,Iluminacion,898.98,HomeStyle,233
+2035,Dispensador de Agua,Tecnologia,Accesorios,1281.13,TechSupply SA,350
+2036,Purificador de Aire,Hogar,Accesorios,2325.22,TechSupply SA,378
+2037,Kit de Limpieza PC,Hogar,Accesorios,2337.46,SoundWave Inc,216
+2038,Cable HDMI 2m,Hogar,Iluminacion,679.52,HomeStyle,204
+2039,Adaptador Bluetooth,Tecnologia,Almacenamiento,1427.2,GadgetWorld,10
+2040,Batería Externa,Hogar,Accesorios,743.54,GadgetWorld,306

@@ -1,0 +1,23 @@
+customer_id,nombre,apellido,email,ciudad,pais,fecha_registro,segmento
+1045,Isabel,Chavez,isabel.chavez1045@mail.com,Quito,Ecuador,2024-03-15,Premium
+1046,Luis,Castillo,luis.castillo1046@mail.com,Santiago,Chile,2024-03-03,Premium
+1047,Maria,Rios,maria.rios1047@mail.com,San Jose,Costa Rica,2024-03-08,Retail
+1048,Maria,Torres,maria.torres1048@mail.com,Arequipa,Peru,2024-03-08,Retail
+1049,Teresa,Ramirez,teresa.ramirez1049@mail.com,Guadalajara,Mexico,2024-03-03,Retail
+1050,Camila,Chavez,camila.chavez1050@mail.com,Montevideo,Uruguay,2024-03-07,Retail
+1051,Eduardo,Espinoza,eduardo.espinoza1051@mail.com,Panama,Panama,2024-03-19,Premium
+1052,Diego,Medina,diego.medina1052@mail.com,Montevideo,Uruguay,2024-03-26,Premium
+1053,Valentina,Fernandez,valentina.fernandez1053@mail.com,Trujillo,Peru,2024-03-22,Premium
+1054,Ricardo,Ortega,ricardo.ortega1054@mail.com,Buenos Aires,Argentina,2024-03-15,Retail
+1055,Manuel,Flores,manuel.flores1055@mail.com,Trujillo,Peru,2024-03-02,Premium
+1056,Eduardo,Nunez,eduardo.nunez1056@mail.com,Trujillo,Peru,2024-03-08,Retail
+1057,Valentina,Silva,valentina.silva1057@mail.com,Cordoba,Argentina,2024-03-05,Premium
+1058,Jorge,Herrera,jorge.herrera1058@mail.com,Cordoba,Argentina,2024-03-08,Retail
+1059,Daniela,Medina,daniela.medina1059@mail.com,San Jose,Costa Rica,2024-03-04,Retail
+1060,Rosa,Silva,rosa.silva1060@mail.com,Lima,Peru,2024-03-03,Retail
+1061,Jorge,Ortega,jorge.ortega1061@mail.com,Montevideo,Uruguay,2024-03-16,Retail
+1062,Alberto,Cordova,alberto.cordova1062@mail.com,Arequipa,Peru,2024-03-06,Premium
+1063,Maria,Cordova,maria.cordova1063@mail.com,Valparaiso,Chile,2024-03-26,Premium
+1064,Andres,Ortega,andres.ortega1064@mail.com,San Jose,Costa Rica,2024-03-22,Premium
+1065,Sofia,Rojas,sofia.rojas1065@mail.com,Ciudad de Mexico,Mexico,2024-03-07,Retail
+1066,Paola,Aguilar,paola.aguilar1066@mail.com,San Jose,Costa Rica,2024-03-02,Premium

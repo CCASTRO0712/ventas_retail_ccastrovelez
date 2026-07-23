@@ -1,0 +1,21 @@
+product_id,nombre_producto,categoria,subcategoria,precio_unitario,proveedor,stock_actual
+2041,Laptop Pro 14,Hogar,Oficina,1551.83,HomeStyle,119
+2042,Mouse Inalambrico,Hogar,Iluminacion,2309.39,SoundWave Inc,273
+2043,Silla Ergonomica,Hogar,Mobiliario,2866.3,GadgetWorld,130
+2044,Escritorio Ajustable,Hogar,Iluminacion,2824.9,OfficeMax,22
+2045,Audifonos Bluetooth,Tecnologia,Accesorios,3443.94,PrintCorp,47
+2046,Monitor 27 pulgadas,Hogar,Oficina,3102.62,PrintCorp,109
+2047,Teclado Mecanico,Hogar,Oficina,1404.79,OfficeMax,345
+2048,Lampara LED Escritorio,Tecnologia,Computadoras,2726.69,OfficeMax,100
+2049,Organizador de Cables,Hogar,Mobiliario,1955.35,GadgetWorld,72
+2050,Webcam Full HD,Hogar,Iluminacion,2806.94,HomeStyle,281
+2051,Impresora Multifuncional,Hogar,Oficina,2148.16,HomeStyle,268
+2052,Silla Gamer,Hogar,Oficina,3141.26,HomeStyle,253
+2053,Disco SSD 1TB,Hogar,Accesorios,2633.7,GadgetWorld,336
+2054,Parlante Portatil,Hogar,Oficina,2197.35,SoundWave Inc,235
+2055,Pizarra Blanca,Tecnologia,Almacenamiento,828.38,SoundWave Inc,173
+2056,Tablet 10 pulgadas,Tecnologia,Accesorios,536.4,BrightHome,365
+2057,Cargador USB-C,Tecnologia,Accesorios,234.16,BrightHome,179
+2058,Router WiFi 6,Hogar,Oficina,227.31,GadgetWorld,225
+2059,Estante Metalico,Hogar,Mobiliario,2999.99,GadgetWorld,304
+2060,Cortinas Blackout,Hogar,Oficina,30.58,SoundWave Inc,162

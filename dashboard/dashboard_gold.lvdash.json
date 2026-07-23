@@ -1,0 +1,232 @@
+{
+  "datasets": [
+    {
+      "name": "ds_ventas_por_categoria",
+      "displayName": "Ventas por categoría",
+      "query": "SELECT p.categoria, SUM(f.monto_total) AS monto_total FROM proyecto_final.gold.fact_ventas f JOIN proyecto_final.gold.dim_producto p ON f.product_key = p.product_key GROUP BY p.categoria ORDER BY monto_total DESC"
+    },
+    {
+      "name": "ds_ventas_por_mes",
+      "displayName": "Ventas por mes",
+      "query": "SELECT d.anio, d.mes, SUM(f.monto_total) AS monto_total FROM proyecto_final.gold.fact_ventas f JOIN proyecto_final.gold.dim_fecha d ON f.date_key = d.date_key GROUP BY d.anio, d.mes ORDER BY d.anio, d.mes"
+    },
+    {
+      "name": "ds_ventas_por_canal",
+      "displayName": "Ventas por canal de venta",
+      "query": "SELECT canal_venta, SUM(monto_total) AS monto_total FROM proyecto_final.gold.fact_ventas GROUP BY canal_venta ORDER BY monto_total DESC"
+    },
+    {
+      "name": "ds_top_clientes",
+      "displayName": "Top 10 clientes por monto comprado",
+      "query": "SELECT c.nombre, c.apellido, c.segmento, SUM(f.monto_total) AS monto_total FROM proyecto_final.gold.fact_ventas f JOIN proyecto_final.gold.dim_cliente c ON f.customer_key = c.customer_key GROUP BY c.nombre, c.apellido, c.segmento ORDER BY monto_total DESC LIMIT 10"
+    },
+    {
+      "name": "ds_kpi_resumen",
+      "displayName": "KPIs de resumen",
+      "query": "SELECT COUNT(DISTINCT order_id) AS total_pedidos, SUM(monto_total) AS monto_total, ROUND(AVG(monto_total), 2) AS ticket_promedio FROM proyecto_final.gold.fact_ventas"
+    }
+  ],
+  "pages": [
+    {
+      "name": "page_resumen_ventas",
+      "displayName": "Resumen de Ventas",
+      "layout": [
+        {
+          "widget": {
+            "name": "widget_kpi_pedidos",
+            "queries": [
+              {
+                "name": "main_query",
+                "query": {
+                  "datasetName": "ds_kpi_resumen",
+                  "fields": [
+                    { "name": "total_pedidos", "expression": "`total_pedidos`" }
+                  ],
+                  "disaggregated": true
+                }
+              }
+            ],
+            "spec": {
+              "version": 2,
+              "widgetType": "counter",
+              "encodings": {
+                "value": { "fieldName": "total_pedidos", "displayName": "Total de pedidos" }
+              }
+            }
+          },
+          "position": { "x": 0, "y": 0, "width": 2, "height": 3 }
+        },
+        {
+          "widget": {
+            "name": "widget_kpi_monto",
+            "queries": [
+              {
+                "name": "main_query",
+                "query": {
+                  "datasetName": "ds_kpi_resumen",
+                  "fields": [
+                    { "name": "monto_total", "expression": "`monto_total`" }
+                  ],
+                  "disaggregated": true
+                }
+              }
+            ],
+            "spec": {
+              "version": 2,
+              "widgetType": "counter",
+              "encodings": {
+                "value": { "fieldName": "monto_total", "displayName": "Monto total vendido" }
+              }
+            }
+          },
+          "position": { "x": 2, "y": 0, "width": 2, "height": 3 }
+        },
+        {
+          "widget": {
+            "name": "widget_kpi_ticket",
+            "queries": [
+              {
+                "name": "main_query",
+                "query": {
+                  "datasetName": "ds_kpi_resumen",
+                  "fields": [
+                    { "name": "ticket_promedio", "expression": "`ticket_promedio`" }
+                  ],
+                  "disaggregated": true
+                }
+              }
+            ],
+            "spec": {
+              "version": 2,
+              "widgetType": "counter",
+              "encodings": {
+                "value": { "fieldName": "ticket_promedio", "displayName": "Ticket promedio" }
+              }
+            }
+          },
+          "position": { "x": 4, "y": 0, "width": 2, "height": 3 }
+        },
+        {
+          "widget": {
+            "name": "widget_ventas_por_categoria",
+            "queries": [
+              {
+                "name": "main_query",
+                "query": {
+                  "datasetName": "ds_ventas_por_categoria",
+                  "fields": [
+                    { "name": "categoria", "expression": "`categoria`" },
+                    { "name": "monto_total", "expression": "`monto_total`" }
+                  ],
+                  "disaggregated": true
+                }
+              }
+            ],
+            "spec": {
+              "version": 3,
+              "widgetType": "bar",
+              "encodings": {
+                "x": { "fieldName": "categoria", "displayName": "Categoría", "scale": { "type": "categorical" } },
+                "y": { "fieldName": "monto_total", "displayName": "Monto total", "scale": { "type": "quantitative" } }
+              },
+              "frame": { "title": "Ventas por categoría de producto", "showTitle": true }
+            }
+          },
+          "position": { "x": 0, "y": 3, "width": 3, "height": 6 }
+        },
+        {
+          "widget": {
+            "name": "widget_ventas_por_mes",
+            "queries": [
+              {
+                "name": "main_query",
+                "query": {
+                  "datasetName": "ds_ventas_por_mes",
+                  "fields": [
+                    { "name": "anio", "expression": "`anio`" },
+                    { "name": "mes", "expression": "`mes`" },
+                    { "name": "monto_total", "expression": "`monto_total`" }
+                  ],
+                  "disaggregated": true
+                }
+              }
+            ],
+            "spec": {
+              "version": 3,
+              "widgetType": "line",
+              "encodings": {
+                "x": { "fieldName": "mes", "displayName": "Mes", "scale": { "type": "categorical" } },
+                "y": { "fieldName": "monto_total", "displayName": "Monto total", "scale": { "type": "quantitative" } },
+                "color": { "fieldName": "anio", "displayName": "Año" }
+              },
+              "frame": { "title": "Evolución de ventas por mes", "showTitle": true }
+            }
+          },
+          "position": { "x": 3, "y": 3, "width": 3, "height": 6 }
+        },
+        {
+          "widget": {
+            "name": "widget_ventas_por_canal",
+            "queries": [
+              {
+                "name": "main_query",
+                "query": {
+                  "datasetName": "ds_ventas_por_canal",
+                  "fields": [
+                    { "name": "canal_venta", "expression": "`canal_venta`" },
+                    { "name": "monto_total", "expression": "`monto_total`" }
+                  ],
+                  "disaggregated": true
+                }
+              }
+            ],
+            "spec": {
+              "version": 3,
+              "widgetType": "pie",
+              "encodings": {
+                "angle": { "fieldName": "monto_total", "displayName": "Monto total" },
+                "color": { "fieldName": "canal_venta", "displayName": "Canal de venta" }
+              },
+              "frame": { "title": "Distribución de ventas por canal", "showTitle": true }
+            }
+          },
+          "position": { "x": 0, "y": 9, "width": 3, "height": 6 }
+        },
+        {
+          "widget": {
+            "name": "widget_top_clientes",
+            "queries": [
+              {
+                "name": "main_query",
+                "query": {
+                  "datasetName": "ds_top_clientes",
+                  "fields": [
+                    { "name": "nombre", "expression": "`nombre`" },
+                    { "name": "apellido", "expression": "`apellido`" },
+                    { "name": "segmento", "expression": "`segmento`" },
+                    { "name": "monto_total", "expression": "`monto_total`" }
+                  ],
+                  "disaggregated": true
+                }
+              }
+            ],
+            "spec": {
+              "version": 1,
+              "widgetType": "table",
+              "encodings": {
+                "columns": [
+                  { "fieldName": "nombre", "displayName": "Nombre" },
+                  { "fieldName": "apellido", "displayName": "Apellido" },
+                  { "fieldName": "segmento", "displayName": "Segmento" },
+                  { "fieldName": "monto_total", "displayName": "Monto total" }
+                ]
+              },
+              "frame": { "title": "Top 10 clientes por monto comprado", "showTitle": true }
+            }
+          },
+          "position": { "x": 3, "y": 9, "width": 3, "height": 6 }
+        }
+      ]
+    }
+  ]
+}

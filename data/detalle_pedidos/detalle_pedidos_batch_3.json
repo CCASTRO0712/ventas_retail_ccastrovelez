@@ -1,0 +1,194 @@
+[
+  {
+    "order_item_id": 9049,
+    "order_id": 5014,
+    "product_id": 2016,
+    "cantidad": 4,
+    "precio_unitario": 3169.62,
+    "descuento": 0.15
+  },
+  {
+    "order_item_id": 9050,
+    "order_id": 5046,
+    "product_id": 2037,
+    "cantidad": 3,
+    "precio_unitario": 2337.46,
+    "descuento": 0.05
+  },
+  {
+    "order_item_id": 9051,
+    "order_id": 5003,
+    "product_id": 2054,
+    "cantidad": 4,
+    "precio_unitario": 2197.35,
+    "descuento": 0.05
+  },
+  {
+    "order_item_id": 9052,
+    "order_id": 5002,
+    "product_id": 2037,
+    "cantidad": 1,
+    "precio_unitario": 2337.46,
+    "descuento": 0.15
+  },
+  {
+    "order_item_id": 9053,
+    "order_id": 5064,
+    "product_id": 2054,
+    "cantidad": 3,
+    "precio_unitario": 2197.35,
+    "descuento": 0.0
+  },
+  {
+    "order_item_id": 9054,
+    "order_id": 5046,
+    "product_id": 2015,
+    "cantidad": 2,
+    "precio_unitario": 2409.36,
+    "descuento": 0.15
+  },
+  {
+    "order_item_id": 9055,
+    "order_id": 5033,
+    "product_id": 2044,
+    "cantidad": 2,
+    "precio_unitario": 2824.9,
+    "descuento": 0.0
+  },
+  {
+    "order_item_id": 9056,
+    "order_id": 5006,
+    "product_id": 2020,
+    "cantidad": 4,
+    "precio_unitario": 2922.74,
+    "descuento": 0.0
+  },
+  {
+    "order_item_id": 9057,
+    "order_id": 5047,
+    "product_id": 2047,
+    "cantidad": 2,
+    "precio_unitario": 1404.79,
+    "descuento": 0.0
+  },
+  {
+    "order_item_id": 9058,
+    "order_id": 5038,
+    "product_id": 2021,
+    "cantidad": 4,
+    "precio_unitario": 454.78,
+    "descuento": 0.0
+  },
+  {
+    "order_item_id": 9059,
+    "order_id": 5026,
+    "product_id": 2009,
+    "cantidad": 5,
+    "precio_unitario": 2177.85,
+    "descuento": 0.05
+  },
+  {
+    "order_item_id": 9060,
+    "order_id": 5065,
+    "product_id": 2059,
+    "cantidad": 3,
+    "precio_unitario": 2999.99,
+    "descuento": 0.0
+  },
+  {
+    "order_item_id": 9061,
+    "order_id": 5033,
+    "product_id": 2059,
+    "cantidad": 4,
+    "precio_unitario": 2999.99,
+    "descuento": 0.05
+  },
+  {
+    "order_item_id": 9062,
+    "order_id": 5044,
+    "product_id": 2052,
+    "cantidad": 1,
+    "precio_unitario": 3141.26,
+    "descuento": 0.1
+  },
+  {
+    "order_item_id": 9063,
+    "order_id": 5010,
+    "product_id": 2010,
+    "cantidad": 2,
+    "precio_unitario": 1775.54,
+    "descuento": 0.1
+  },
+  {
+    "order_item_id": 9064,
+    "order_id": 5047,
+    "product_id": 2006,
+    "cantidad": 4,
+    "precio_unitario": 722.86,
+    "descuento": 0.0
+  },
+  {
+    "order_item_id": 9065,
+    "order_id": 5034,
+    "product_id": 2035,
+    "cantidad": 1,
+    "precio_unitario": 1281.13,
+    "descuento": 0.1
+  },
+  {
+    "order_item_id": 9066,
+    "order_id": 5048,
+    "product_id": 2044,
+    "cantidad": 3,
+    "precio_unitario": 2824.9,
+    "descuento": 0.15
+  },
+  {
+    "order_item_id": 9067,
+    "order_id": 5049,
+    "product_id": 2053,
+    "cantidad": 3,
+    "precio_unitario": 2633.7,
+    "descuento": 0.0
+  },
+  {
+    "order_item_id": 9068,
+    "order_id": 5030,
+    "product_id": 2031,
+    "cantidad": 1,
+    "precio_unitario": 3287.94,
+    "descuento": 0.15
+  },
+  {
+    "order_item_id": 9069,
+    "order_id": 5042,
+    "product_id": 2059,
+    "cantidad": 5,
+    "precio_unitario": 2999.99,
+    "descuento": 0.0
+  },
+  {
+    "order_item_id": 9070,
+    "order_id": 5009,
+    "product_id": 2041,
+    "cantidad": 4,
+    "precio_unitario": 1551.83,
+    "descuento": 0.05
+  },
+  {
+    "order_item_id": 9071,
+    "order_id": 5053,
+    "product_id": 2008,
+    "cantidad": 2,
+    "precio_unitario": 1113.46,
+    "descuento": 0.0
+  },
+  {
+    "order_item_id": 9072,
+    "order_id": 5005,
+    "product_id": 2020,
+    "cantidad": 4,
+    "precio_unitario": 2922.74,
+    "descuento": 0.0
+  }
+]

@@ -1,0 +1,21 @@
+product_id,nombre_producto,categoria,subcategoria,precio_unitario,proveedor,stock_actual
+2001,Laptop Pro 14,Tecnologia,Computadoras,2048.78,PrintCorp,281
+2002,Mouse Inalambrico,Tecnologia,Computadoras,3363.12,TechSupply SA,105
+2003,Silla Ergonomica,Tecnologia,Computadoras,2366.49,OfficeMax,216
+2004,Escritorio Ajustable,Tecnologia,Accesorios,2030.43,TechSupply SA,327
+2005,Audifonos Bluetooth,Tecnologia,Oficina,2304.23,PrintCorp,277
+2006,Monitor 27 pulgadas,Hogar,Accesorios,722.86,HomeStyle,170
+2007,Teclado Mecanico,Tecnologia,Almacenamiento,1391.29,HomeStyle,340
+2008,Lampara LED Escritorio,Hogar,Oficina,1113.46,GadgetWorld,47
+2009,Organizador de Cables,Tecnologia,Oficina,2177.85,PrintCorp,61
+2010,Webcam Full HD,Tecnologia,Accesorios,1775.54,OfficeMax,188
+2011,Impresora Multifuncional,Tecnologia,Accesorios,1299.65,OfficeMax,234
+2012,Silla Gamer,Hogar,Mobiliario,2340.84,PrintCorp,163
+2013,Disco SSD 1TB,Tecnologia,Accesorios,932.99,TechSupply SA,390
+2014,Parlante Portatil,Tecnologia,Almacenamiento,993.33,OfficeMax,377
+2015,Pizarra Blanca,Hogar,Iluminacion,2409.36,GadgetWorld,145
+2016,Tablet 10 pulgadas,Hogar,Accesorios,3169.62,GadgetWorld,36
+2017,Cargador USB-C,Tecnologia,Oficina,2904.42,TechSupply SA,11
+2018,Router WiFi 6,Hogar,Iluminacion,2233.53,SoundWave Inc,92
+2019,Estante Metalico,Hogar,Oficina,1967.56,TechSupply SA,48
+2020,Cortinas Blackout,Tecnologia,Computadoras,2922.74,PrintCorp,292

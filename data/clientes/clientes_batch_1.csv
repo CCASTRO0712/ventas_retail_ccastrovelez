@@ -1,0 +1,23 @@
+customer_id,nombre,apellido,email,ciudad,pais,fecha_registro,segmento
+1001,Rosa,Fernandez,rosa.fernandez1001@mail.com,Lima,Peru,2024-01-24,Premium
+1002,Diego,Castillo,diego.castillo1002@mail.com,Bogota,Colombia,2024-01-24,Retail
+1003,Manuel,Aguilar,manuel.aguilar1003@mail.com,San Jose,Costa Rica,2024-01-03,Premium
+1004,Carlos,Gonzalez,carlos.gonzalez1004@mail.com,Cusco,Peru,2024-01-07,Retail
+1005,Lucia,Campos,lucia.campos1005@mail.com,Lima,Peru,2024-01-18,Retail
+1006,Carmen,Flores,carmen.flores1006@mail.com,San Jose,Costa Rica,2024-01-14,Retail
+1007,Daniela,Rios,daniela.rios1007@mail.com,Valparaiso,Chile,2024-01-26,Retail
+1008,Gabriela,Medina,gabriela.medina1008@mail.com,Medellin,Colombia,2024-01-23,Premium
+1009,Patricia,Herrera,patricia.herrera1009@mail.com,Bogota,Colombia,2024-01-07,Premium
+1010,Luis,Torres,luis.torres1010@mail.com,Guayaquil,Ecuador,2024-01-04,Premium
+1011,Alberto,Salazar,alberto.salazar1011@mail.com,Asuncion,Paraguay,2024-01-09,Retail
+1012,Eduardo,Reyes,eduardo.reyes1012@mail.com,San Jose,Costa Rica,2024-01-04,Premium
+1013,Ana,Silva,ana.silva1013@mail.com,Ciudad de Mexico,Mexico,2024-01-27,Premium
+1014,Paola,Rojas,paola.rojas1014@mail.com,Cusco,Peru,2024-01-02,Retail
+1015,Gabriela,Morales,gabriela.morales1015@mail.com,Cusco,Peru,2024-01-28,Retail
+1016,Alberto,Fernandez,alberto.fernandez1016@mail.com,Guayaquil,Ecuador,2024-01-09,Premium
+1017,Rosa,Cruz,rosa.cruz1017@mail.com,Quito,Ecuador,2024-01-06,Premium
+1018,Ricardo,Rojas,ricardo.rojas1018@mail.com,Valparaiso,Chile,2024-01-23,Retail
+1019,Javier,Flores,javier.flores1019@mail.com,Medellin,Colombia,2024-01-18,Retail
+1020,Jorge,Reyes,jorge.reyes1020@mail.com,Guayaquil,Ecuador,2024-01-09,Retail
+1021,Manuel,Nunez,manuel.nunez1021@mail.com,Arequipa,Peru,2024-01-08,Retail
+1022,Raul,Nunez,raul.nunez1022@mail.com,Guayaquil,Ecuador,2024-01-09,Retail

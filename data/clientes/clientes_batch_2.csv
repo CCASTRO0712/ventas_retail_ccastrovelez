@@ -1,0 +1,23 @@
+customer_id,nombre,apellido,email,ciudad,pais,fecha_registro,segmento
+1023,Valentina,Espinoza,valentina.espinoza1023@mail.com,Panama,Panama,2024-02-23,Premium
+1024,Valentina,Flores,valentina.flores1024@mail.com,Montevideo,Uruguay,2024-02-13,Premium
+1025,Sofia,Herrera,sofia.herrera1025@mail.com,Bogota,Colombia,2024-02-08,Premium
+1026,Eduardo,Rios,eduardo.rios1026@mail.com,Buenos Aires,Argentina,2024-02-19,Premium
+1027,Ricardo,Castillo,ricardo.castillo1027@mail.com,Bogota,Colombia,2024-02-17,Premium
+1028,Ana,Guerrero,ana.guerrero1028@mail.com,Arequipa,Peru,2024-02-28,Retail
+1029,Sofia,Flores,sofia.flores1029@mail.com,Medellin,Colombia,2024-02-26,Premium
+1030,Javier,Torres,javier.torres1030@mail.com,Guayaquil,Ecuador,2024-02-13,Premium
+1031,Lucia,Herrera,lucia.herrera1031@mail.com,San Jose,Costa Rica,2024-02-28,Retail
+1032,Manuel,Aguilar,manuel.aguilar1032@mail.com,Trujillo,Peru,2024-02-22,Premium
+1033,Gabriela,Flores,gabriela.flores1033@mail.com,Guadalajara,Mexico,2024-02-04,Premium
+1034,Miguel,Paredes,miguel.paredes1034@mail.com,Cordoba,Argentina,2024-02-01,Premium
+1035,Lucia,Guerrero,lucia.guerrero1035@mail.com,Medellin,Colombia,2024-02-17,Retail
+1036,Alberto,Flores,alberto.flores1036@mail.com,Ciudad de Mexico,Mexico,2024-02-27,Retail
+1037,Sofia,Salazar,sofia.salazar1037@mail.com,Medellin,Colombia,2024-02-18,Retail
+1038,Javier,Nunez,javier.nunez1038@mail.com,Montevideo,Uruguay,2024-02-01,Retail
+1039,Hector,Salazar,hector.salazar1039@mail.com,Ciudad de Mexico,Mexico,2024-02-08,Retail
+1040,Diego,Navarro,diego.navarro1040@mail.com,Panama,Panama,2024-02-03,Retail
+1041,Eduardo,Diaz,eduardo.diaz1041@mail.com,Cusco,Peru,2024-02-25,Retail
+1042,Sofia,Chavez,sofia.chavez1042@mail.com,Montevideo,Uruguay,2024-02-18,Retail
+1043,Camila,Mendoza,camila.mendoza1043@mail.com,Asuncion,Paraguay,2024-02-14,Retail
+1044,Hector,Silva,hector.silva1044@mail.com,Cali,Colombia,2024-02-23,Premium

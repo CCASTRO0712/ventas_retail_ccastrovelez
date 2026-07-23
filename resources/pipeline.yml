@@ -1,0 +1,22 @@
+resources:
+  pipelines:
+    pipeline_ventas_retail:
+      name: "pipeline_${var.project_name}"
+      catalog: ${var.catalog}
+      # Esquema por defecto de publicación (Gold). Bronze y Silver se publican
+      # en sus propios esquemas indicando "schema=" en cada @dlt.table.
+      schema: ${var.gold_schema}
+      serverless: true
+      channel: CURRENT
+      photon: true
+      development: true
+
+      libraries:
+        - glob:
+            include: ../src/transformations/**
+
+      configuration:
+        landing.volume.path: "/Volumes/${var.catalog}/${var.landing_schema}/${var.volume_name}/${var.project_name}"
+        bronze.schema: ${var.bronze_schema}
+        silver.schema: ${var.silver_schema}
+        gold.schema: ${var.gold_schema}

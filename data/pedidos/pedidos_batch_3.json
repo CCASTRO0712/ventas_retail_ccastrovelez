@@ -1,0 +1,178 @@
+[
+  {
+    "order_id": 5045,
+    "customer_id": 1062,
+    "fecha_pedido": "2024-03-04",
+    "canal_venta": "web",
+    "estado_pedido": "completado",
+    "total_pedido": 314.85
+  },
+  {
+    "order_id": 5046,
+    "customer_id": 1007,
+    "fecha_pedido": "2024-03-05",
+    "canal_venta": "web",
+    "estado_pedido": "en_proceso",
+    "total_pedido": 3797.52
+  },
+  {
+    "order_id": 5047,
+    "customer_id": 1011,
+    "fecha_pedido": "2024-03-08",
+    "canal_venta": "web",
+    "estado_pedido": "completado",
+    "total_pedido": 1676.37
+  },
+  {
+    "order_id": 5048,
+    "customer_id": 1029,
+    "fecha_pedido": "2024-03-25",
+    "canal_venta": "tienda_fisica",
+    "estado_pedido": "completado",
+    "total_pedido": 3635.85
+  },
+  {
+    "order_id": 5049,
+    "customer_id": 1039,
+    "fecha_pedido": "2024-03-28",
+    "canal_venta": "tienda_fisica",
+    "estado_pedido": "cancelado",
+    "total_pedido": 1235.41
+  },
+  {
+    "order_id": 5050,
+    "customer_id": 1008,
+    "fecha_pedido": "2024-03-20",
+    "canal_venta": "tienda_fisica",
+    "estado_pedido": "completado",
+    "total_pedido": 3055.69
+  },
+  {
+    "order_id": 5051,
+    "customer_id": 1028,
+    "fecha_pedido": "2024-03-09",
+    "canal_venta": "tienda_fisica",
+    "estado_pedido": "completado",
+    "total_pedido": 974.66
+  },
+  {
+    "order_id": 5052,
+    "customer_id": 1010,
+    "fecha_pedido": "2024-03-06",
+    "canal_venta": "web",
+    "estado_pedido": "completado",
+    "total_pedido": 2763.7
+  },
+  {
+    "order_id": 5053,
+    "customer_id": 1061,
+    "fecha_pedido": "2024-03-10",
+    "canal_venta": "web",
+    "estado_pedido": "completado",
+    "total_pedido": 2833.68
+  },
+  {
+    "order_id": 5054,
+    "customer_id": 1059,
+    "fecha_pedido": "2024-03-03",
+    "canal_venta": "tienda_fisica",
+    "estado_pedido": "completado",
+    "total_pedido": 1072.93
+  },
+  {
+    "order_id": 5055,
+    "customer_id": 1026,
+    "fecha_pedido": "2024-03-14",
+    "canal_venta": "web",
+    "estado_pedido": "completado",
+    "total_pedido": 2597.59
+  },
+  {
+    "order_id": 5056,
+    "customer_id": 1035,
+    "fecha_pedido": "2024-03-27",
+    "canal_venta": "web",
+    "estado_pedido": "completado",
+    "total_pedido": 680.37
+  },
+  {
+    "order_id": 5057,
+    "customer_id": 1040,
+    "fecha_pedido": "2024-03-20",
+    "canal_venta": "tienda_fisica",
+    "estado_pedido": "en_proceso",
+    "total_pedido": 3686.35
+  },
+  {
+    "order_id": 5058,
+    "customer_id": 1057,
+    "fecha_pedido": "2024-03-04",
+    "canal_venta": "app_movil",
+    "estado_pedido": "completado",
+    "total_pedido": 2804.94
+  },
+  {
+    "order_id": 5059,
+    "customer_id": 1035,
+    "fecha_pedido": "2024-03-17",
+    "canal_venta": "tienda_fisica",
+    "estado_pedido": "completado",
+    "total_pedido": 340.16
+  },
+  {
+    "order_id": 5060,
+    "customer_id": 1006,
+    "fecha_pedido": "2024-03-14",
+    "canal_venta": "tienda_fisica",
+    "estado_pedido": "completado",
+    "total_pedido": 1016.46
+  },
+  {
+    "order_id": 5061,
+    "customer_id": 1012,
+    "fecha_pedido": "2024-03-08",
+    "canal_venta": "tienda_fisica",
+    "estado_pedido": "en_proceso",
+    "total_pedido": 2309.29
+  },
+  {
+    "order_id": 5062,
+    "customer_id": 1003,
+    "fecha_pedido": "2024-03-25",
+    "canal_venta": "tienda_fisica",
+    "estado_pedido": "en_proceso",
+    "total_pedido": 2313.46
+  },
+  {
+    "order_id": 5063,
+    "customer_id": 1023,
+    "fecha_pedido": "2024-03-16",
+    "canal_venta": "tienda_fisica",
+    "estado_pedido": "completado",
+    "total_pedido": 3665.97
+  },
+  {
+    "order_id": 5064,
+    "customer_id": 1024,
+    "fecha_pedido": "2024-03-19",
+    "canal_venta": "app_movil",
+    "estado_pedido": "completado",
+    "total_pedido": 1977.07
+  },
+  {
+    "order_id": 5065,
+    "customer_id": 1012,
+    "fecha_pedido": "2024-03-16",
+    "canal_venta": "app_movil",
+    "estado_pedido": "completado",
+    "total_pedido": 1297.81
+  },
+  {
+    "order_id": 5066,
+    "customer_id": 1014,
+    "fecha_pedido": "2024-03-28",
+    "canal_venta": "web",
+    "estado_pedido": "completado",
+    "total_pedido": 2780.82
+  }
+]
