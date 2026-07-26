@@ -2,12 +2,6 @@
 # CAPA GOLD
 # Modelo dimensional en estrella construido como MATERIALIZED VIEW:
 #   dim_cliente, dim_producto, dim_fecha  <-  fact_ventas
-# Las expectations aquí validan la integridad del modelo dimensional:
-# llaves foráneas siempre presentes y métricas coherentes (no negativas).
-#
-# IMPORTANTE: el esquema de Unity Catalog va dentro del "name" de la tabla
-# (ej. "gold.dim_cliente"), y las referencias a tablas de Silver también
-# deben ser parcialmente calificadas al leerlas.
 # -----------------------------------------------------------------------------
 
 import dlt

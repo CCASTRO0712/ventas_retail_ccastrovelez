@@ -6,8 +6,6 @@
 # Uso:
 #   ./scripts/upload_data.sh <catalog> <landing_schema> <volume_name> <project_name>
 #
-# Ejemplo:
-#   ./scripts/upload_data.sh proyecto_final landing raw_data ventas_retail_ccastrovelez
 # -----------------------------------------------------------------------------
 set -euo pipefail
 

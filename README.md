@@ -25,10 +25,6 @@ detalle_pedidos/*  --STREAM--> detalle_pedidos_raw --STREAM--> detalle_pedidos -
 | Silver | `STREAMING TABLE` (STREAM) |
 | Gold   | `MATERIALIZED VIEW`         |
 
-Relación entre entidades:
-`pedidos.customer_id → clientes.customer_id`,
-`detalle_pedidos.order_id → pedidos.order_id`,
-`detalle_pedidos.product_id → productos.product_id`.
 
 ## 2. Estructura del repositorio
 
@@ -47,7 +43,7 @@ ventas_retail_ccastrovelez/
 │   └── 00_setup.py                    # Notebook: crea catálogo/esquemas/Volume
 ├── scripts/
 │   └── upload_data.sh                 # Sube los 12 batches al Volume (Databricks CLI)
-├── data/                              # Los 12 archivos de origen (para subir al Volume)
+├── data/                              # Los 12 archivos de origen
 │   ├── clientes/{*_batch_1,2,3}.csv
 │   ├── productos/{*_batch_1,2,3}.csv
 │   ├── pedidos/{*_batch_1,2,3}.json
@@ -121,11 +117,7 @@ Todo es configurable vía variables del bundle (`databricks.yml`).
 
 **Bronze:** `clientes_raw`, `productos_raw`, `pedidos_raw`, `detalle_pedidos_raw`
 **Silver:** `clientes`, `productos`, `pedidos`, `detalle_pedidos`
-**Gold (estrella):** `dim_cliente`, `dim_producto`, `dim_fecha`, `fact_ventas`
-
-`fact_ventas` (grano: 1 fila por línea de detalle) contiene las llaves
-`customer_key`, `product_key`, `date_key` y las métricas `cantidad`,
-`precio_unitario`, `descuento`, `monto_total`.
+**Gold:** `dim_cliente`, `dim_producto`, `dim_fecha`, `fact_ventas`
 
 Ruta del Volume:
 ```
@@ -168,57 +160,3 @@ menos una regla de cada una en el proyecto:
 | fact_ventas | `monto_total >= 0` | drop |
 | fact_ventas | `precio_unitario >= 0` | warn |
 
-## 6. Despliegue (Databricks Asset Bundle)
-
-1. Instala/actualiza la Databricks CLI (`databricks -v` ≥ 0.230) y autentícate:
-   ```bash
-   databricks auth login --host https://<tu-workspace>.cloud.databricks.com
-   ```
-2. Ajusta `workspace.host` en `databricks.yml` (y las variables si usas otro
-   catálogo/nombre de proyecto).
-3. Valida y despliega el bundle:
-   ```bash
-   databricks bundle validate
-   databricks bundle deploy -t dev
-   ```
-4. Ejecuta el Job (crea catálogo/esquemas/Volume y corre el pipeline):
-   ```bash
-   databricks bundle run job_ventas_retail -t dev
-   ```
-   La primera corrida del pipeline no encontrará archivos aún: sube los datos
-   (paso 5) y vuelve a correr el Job, o solo el pipeline:
-   ```bash
-   databricks bundle run pipeline_ventas_retail -t dev
-   ```
-5. Sube los 12 archivos batch al Volume:
-   ```bash
-   ./scripts/upload_data.sh proyecto_final landing raw_data ventas_retail_ccastrovelez
-   ```
-6. Importa `dashboard/dashboard_gold.lvdash.json` en Databricks (Dashboards →
-   Import dashboard from file) y ajusta el catálogo/esquema de las queries si
-   usaste valores distintos a los defaults.
-
-## 7. Notas de diseño
-
-- **STREAM en Bronze y Silver:** Bronze usa Auto Loader (`cloudFiles`) sobre
-  el Volume; Silver lee de Bronze con `dlt.read_stream(...)`. Gold usa
-  `dlt.read(...)` (batch) porque son `MATERIALIZED VIEW`.
-- **Deduplicación en streaming:** se usa `dropDuplicates([<pk>])` (soportado
-  de forma nativa por Structured Streaming sin necesidad de watermark),
-  ya que funciones de ventana tipo `row_number()` no son válidas sobre un
-  DataFrame de streaming sin agregación por tiempo.
-- **Multi-schema en un solo pipeline:** cada `@dlt.table` especifica su
-  propio `schema=` (bronze/silver/gold), publicando en 3 esquemas distintos
-  del mismo catálogo desde un único Declarative Pipeline.
-- **Llaves surrogate:** por simplicidad y estabilidad ante recomputo de
-  `MATERIALIZED VIEW`, `customer_key`/`product_key` son iguales a los IDs
-  naturales, y `date_key` es la fecha en formato `yyyyMMdd`.
-
-## 8. Entregables
-
-- [x] Código del pipeline (Bronze/Silver/Gold + expectations): `src/transformations/`
-- [x] Dashboard sobre Gold (4+ visualizaciones): `dashboard/dashboard_gold.lvdash.json`
-- [x] Bundle desplegable con `databricks bundle deploy`
-- [x] Script/notebook de setup: `setup/00_setup.py`
-- [ ] Enlace al repositorio de GitHub *(agrégalo aquí una vez publicado)*
-- [ ] Presentación con evidencia (pipeline corriendo + dashboard) *(adjuntar aparte)*

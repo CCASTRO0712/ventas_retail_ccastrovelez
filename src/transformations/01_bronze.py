@@ -4,13 +4,6 @@
 # Sin transformación de negocio: solo se agregan columnas de metadata de
 # ingesta (_ingest_timestamp, _source_file). Todas las tablas son STREAMING
 # TABLE, construidas 100% con Spark Declarative Pipelines.
-#
-# IMPORTANTE: para publicar en un esquema de Unity Catalog distinto al
-# esquema por defecto del pipeline (que es "gold"), el esquema se indica
-# DENTRO del "name" de la tabla (ej. "bronze.clientes_raw"), no con un
-# parámetro "schema=" aparte -- ese parámetro sirve para otra cosa
-# (definir explícitamente el StructType de columnas) y no para elegir el
-# esquema de Unity Catalog.
 # -----------------------------------------------------------------------------
 
 import dlt

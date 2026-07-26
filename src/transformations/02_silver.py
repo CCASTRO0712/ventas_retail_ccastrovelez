@@ -4,15 +4,6 @@
 # Todas las tablas son STREAMING TABLE (STREAM), leídas incrementalmente desde
 # Bronze con dlt.read_stream(). Las expectations aquí validan validez
 # estructural y de formato de cada campo.
-#
-# Severidades usadas en esta capa:
-#   - expect_or_fail -> corta el pipeline si se viola la regla (PKs)
-#   - expect_or_drop -> descarta silenciosamente las filas inválidas
-#   - expect         -> solo advierte (warn) pero no descarta ni corta
-#
-# IMPORTANTE: el esquema de Unity Catalog va dentro del "name" de la tabla
-# (ej. "silver.clientes"), y las referencias a tablas de otro esquema
-# (Bronze) también deben ser parcialmente calificadas al leerlas.
 # -----------------------------------------------------------------------------
 
 import dlt
